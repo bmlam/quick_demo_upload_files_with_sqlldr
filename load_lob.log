@@ -1,0 +1,50 @@
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Tue Jun 21 11:44:50 2016
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader_cfg.txt
+Data File:      lob_file_list.txt
+  Bad File:     load_lob.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TEST_CLOB, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ID                                  FIRST    10   ;       CHARACTER            
+FILE_NAME                            NEXT   100   ;       CHARACTER            
+TEXT                              DERIVED     *  EOF      CHARACTER            
+    Dynamic LOBFILE.  Filename in field FILE_NAME
+
+
+Table TEST_CLOB:
+  1 Row successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                   7296 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             1
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Tue Jun 21 11:44:50 2016
+Run ended on Tue Jun 21 11:44:51 2016
+
+Elapsed time was:     00:00:01.34
+CPU time was:         00:00:00.03

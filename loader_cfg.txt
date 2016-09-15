@@ -1,0 +1,9 @@
+LOAD DATA 
+INFILE 'test_clob.csv'
+   INTO TABLE test_clob
+   FIELDS TERMINATED BY ';'
+   (id    CHAR(10),
+    file_name  CHAR(100),
+    text      LOBFILE(file_name) TERMINATED BY EOF
+	)
+
